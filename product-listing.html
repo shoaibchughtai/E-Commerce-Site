@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Listing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="Images/Brand/logo-colored.svg" alt="" />
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <select name="categories" id="">
+          <option value="categories" selected disabled>All Categories</option>
+          <option value="categories">Automobiles</option>
+          <option value="categories">Cloth and Wear</option>
+          <option value="categories">Home Interiors</option>
+          <option value="categories">Computer and Tech</option>
+          <option value="categories">Tools and Equipments</option>
+          <option value="categories">Sports and Outdoor</option>
+          <option value="categories">Animal and Pets</option>
+          <option value="categories">Machinery and Tools</option>
+          <option value="categories">More Categoris</option>
+        </select>
+        <button type="submit">Search</button>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">
+          <i class="fa-solid fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-envelope-open-text"></i>
+          <span>Message</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-heart"></i>
+          <span>Orders</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>My Cart</span>
+        </a>
+      </div>
+    </nav>
+    <div class="menu-bar">
+      <div class="left-menu">
+        <i class="fa-solid fa-bars"></i>
+        <div class="menu-links">
+          <a href="#">All Categories</a>
+          <a href="#">Hot Offers</a>
+          <a href="#">Gift Boxes</a>
+          <a href="#">Projects</a>
+          <a href="#">Menu Items</a>
+        </div>
+        <div class="help-dropdown">
+          <select name="help" id="help">
+            <option value="" selected disabled>Help</option>
+            <option value="order">Order</option>
+            <option value="payment">Payment</option>
+            <option value="shipping">Shipping</option>
+            <option value="returns">Returns</option>
+            <option value="account">Account</option>
+            <option value="product">Product</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="right-menu">
+        <select name="lang-currency" id="lang-currency">
+          <option value="en-usd" selected>English, USD</option>
+          <option value="en-gbp">English, GBP</option>
+          <option value="en-eur">English, EUR</option>
+          <option value="fr-eur">Français, EUR</option>
+          <option value="de-eur">Deutsch, EUR</option>
+          <option value="es-usd">Español, USD</option>
+          <option value="zh-cny">中文, CNY</option>
+          <option value="en-inr">English, INR (India)</option>
+          <option value="hi-inr">हिन्दी, INR (India)</option>
+          <option value="en-pkr">English, PKR (Pakistan)</option>
+          <option value="ur-pkr">اردو, PKR (Pakistan)</option>
+          <option value="ja-jpy">日本語, JPY</option>
+        </select>
+
+        <select class="flag-select">
+          <option value="us" class="flag-option" selected>
+            Ship to <img src="Images/bneran.png" alt="" />USA
+          </option>
+          <option value="gb" class="flag-option">Ship to UK</option>
+          <option value="ca" class="flag-option">Ship to Canada</option>
+          <option value="de" class="flag-option">Ship to Germany</option>
+          <option value="fr" class="flag-option">Ship to France</option>
+          <option value="in" class="flag-option">Ship to India</option>
+          <option value="pk" class="flag-option">Ship to Pakistan</option>
+          <option value="ae" class="flag-option">Ship to UAE</option>
+          <option value="cn" class="flag-option">Ship to China</option>
+          <option value="jp" class="flag-option">Ship to Japan</option>
+          <option value="au" class="flag-option">Ship to Australia</option>
+        </select>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+
+    <div class="breadcrumb-bar">
+      <a href="index.html">Home</a>
+      <a href="clothings.html">Clothings</a>
+      <a href="mens-wear.html">Men's wear</a>
+      <span>Summer clothing</span>
+    </div>
+
+    <div class="main-product-listing">
+      <div class="sidebar">
+        <div class="sidebar-section">
+    <div class="sidebar-title" onclick="toggleAccordion(this)">
+      Category <span class="arrow">▼</span>
+    </div>
+    <ul class="sidebar-list">
+      <li><a href="#">Mobile accessory</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Smartphones</a></li>
+      <li><a href="#">Modern tech</a></li>
+    </ul>
+    <a href="#" class="see-all">See all</a>
+  </div>
+
+        <hr />
+
+        <div class="sidebar-section">
+          <h3>Brands</h3>
+          <ul class="sidebar-list">
+            <li>
+              <label><input type="checkbox" /> Samsung</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Apple</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Huawei</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Pocco</label>
+            </li>
+            <li>
+              <label><input type="checkbox" /> Lenovo</label>
+            </li>
+          </ul>
+          <a href="#" class="see-all">See all</a>
+        </div>
+      </div>
+
+      <div class="product-area">
+        <div class="product-card">
+  <img src="https://via.placeholder.com/120" alt="Product Image" class="product-card-image">
+  
+  <div class="product-card-details">
+    <div class="product-card-title">Canon Camera EOS 2000, Black 10x zoom</div>
+    <div>
+      <span class="product-card-price">$998.00</span>
+      <span class="product-card-old-price">$1128.00</span>
+    </div>
+    <div class="product-card-rating">
+      ★★★★☆ 7.5 · 154 orders <span class="product-card-shipping">· Free Shipping</span>
+    </div>
+    <div class="product-card-description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+    </div>
+    <a href="#" class="product-card-link">View details</a>
+  </div>
+
+  <div class="product-card-fav">🤍</div>
+</div>
+      </div>
+      
+    </div>
+  </body>
+</html>
